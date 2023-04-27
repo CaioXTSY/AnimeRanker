@@ -32,7 +32,6 @@ def load_animes(file_name):
     with open(file_name, 'r', encoding='utf-8') as file:
         return json.load(file)
     
-
 def save_sorted_animes(file_name, sorted_animes):
     with open(file_name, 'w', encoding='utf-8') as file:
         json.dump(sorted_animes, file, indent=2)    
