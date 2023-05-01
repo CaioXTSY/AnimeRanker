@@ -3,9 +3,6 @@ import json
 def rank_key(anime):
     return anime['popularity']
 
-def get_digit(item, key_func, digit_pos):
-    return int(key_func(item) / (10 ** digit_pos)) % 10
-
 def bckt_sort(animes, num_buckets, key_func):
     key_val = [key_func(item) for item in animes]
     min_val, max_val = min(key_val), max(key_val)
